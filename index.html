@@ -22,16 +22,16 @@
     <header class="header">
         <nav class="nav bd-grid d-flex  justify-content-between ">
             <h3 class="backtohome"><a href="#" class="text-decoration-none backtohome">Portfolio</a></h3>
-            <div class="list-menu">
+            <div class="list-menu" id="list_menu">
                 <ul class="list-items d-flex">
-                    <li class="list-item"><a href="#home" class="item-link">Home</a></li>
+                    <li class="list-item"><a href="#home" class="item-link active">Home</a></li>
                     <li class="list-item"><a href="#about" class="item-link">About</a></li>
                     <li class="list-item"><a href="#skills" class="item-link">Skills</a></li>
                     <li class="list-item"><a href="#project" class="item-link">Project</a></li>
                     <li class="list-item"><a href="#contact" class="item-link">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav-toggle d-none" id="nav_toggle">
+            <div class="nav-toggle" id="nav_toggle">
                 <i class="bi bi-list"></i>
             </div>
         </nav>
@@ -40,7 +40,8 @@
         <!-- home -->
         <section class="home" id="home">
             <div class="home-container">
-                <h1 class="home-title"><span>HELLO..</span></h1>
+                <h1 class="home-title"><span>I am..</span></h1>
+                <h2 class="home-subtitle"><span>Gunasekar</span></h2>
 
                 <div class="home-scroll">
                     <a href="#about" class="home-scroll-link"><i class="bi bi-arrow-up"></i>Scrool Down</a>
@@ -70,8 +71,10 @@
                             </p>
 
                             <div class="about-social">
-                                <a href="" class="about-social-iocn"><i class="bi bi-linkedin"></i></a>
-                                <a href="" class="about-social-iocn"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/feed/" target="_blank" class="about-social-iocn"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/guna0223" target="_blank" class="about-social-iocn"><i
+                                        class="bi bi-github"></i></a>
                                 <!-- <a href="" class="about-social-iocn"></a> -->
                             </div>
                         </div>
@@ -93,8 +96,9 @@
                     </p>
 
                     <div class="about-social">
-                        <a href="" class="about-social-iocn"><i class="bi bi-linkedin"></i></a>
-                        <a href="" class="about-social-iocn"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="about-social-iocn"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/guna0223" class="about-social-iocn"><i class="bi bi-github"></i></a>
                         <!-- <a href="" class="about-social-iocn"></a> -->
                     </div>
                 </div>
@@ -113,21 +117,50 @@
                     <span class="skill-name">JavaScript</span>
                     <span class="skill-name">Bootstrap</span>
                     <span class="skill-name">React</span>
-                    <!-- <span class="skill-name">Git & GitHub</span> -->
-                    <h4 class="skills-subtitle">Back-end</h4>
-                    <span class="skill-name">Python</span>
+
+                    <!-- <h4 class="skills-subtitle">Back-end</h4>
+                    <span class="skill-name">Python</span> -->
                     <!-- <span class="skill-name"></span>
                     <span class="skill-name">JavaScript</span>
                     <span class="skill-name">Bootstrap</span>
                     <span class="skill-name">React</span> -->
-                </div>
-
-                <div class="skills-img">
-                    <img src="" alt="tis is image">
+                    <h3 class="skills-subtitle">Tools & Platforms</h3>
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-name">VS Code</span>
                 </div>
             </div>
         </section>
 
+        <section id="skills">
+            <div class="card-container">
+                <div class="skills-grid ">
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML" />
+                        <div class="skill-names">HTML</div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS" />
+                        <div class="skill-names">CSS</div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                        <div class="skill-names">JAVASCRIPT</div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="ReactJS" />
+                        <div class="skill-names">REACT JS</div>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" />
+                        <div class="skill-names">GITHUB</div>
+                    </div>
+
+        </section>
         <!-- Project -->
 
         <section class="project-section " id="project">
@@ -217,12 +250,42 @@
 
     </main>
 
-    <footer>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-data">
+                <h2 class="footer-title">Gunasekar</h2>
+                <p class="footer-text">I'm Gunasekar and this is my personal website</p>
+            </div>
 
+            <div class="footer-data">
+                <h2 class="footer-title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#Contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-data">
+                <h2 class="footer-title">FOLLOW</h2>
+                <div class="social-icon">
+                    <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="footer-social"><i class="bi bi-github"></i></a>
+                    <!-- <a href="#" class="footer-social"><i class='bx bxl-twitter'></i></a>-->
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- scroll  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main js -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

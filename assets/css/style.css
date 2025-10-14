@@ -84,6 +84,11 @@ img {
     display: block;
 }
 
+.home-img {
+    height: 300px;
+    width: 300px;
+}
+
 body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
@@ -330,7 +335,6 @@ li {
     display: flex;
     margin-bottom: var(--mb-4);
 }
-
 .about-title {
     color: black;
     text-decoration: underline;
@@ -348,10 +352,6 @@ li {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.about-img img {
-    /* width: 100%; */
 }
 
 .about-info {
@@ -502,11 +502,9 @@ li {
 }
 
 .skill:hover {
-    transform: translatey(-8px);
+    transform: translatey(-2px);
     transition: all 0.3s ease;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    ;
-    color: var(--white-color);
 }
 
 
@@ -672,13 +670,20 @@ li {
     display: block;
     background-color: var(--first-color);
     color: var(--white-color);
-    padding: .75rem 2.5rem;
+    padding: 10px 30px;
     margin-left: auto;
-    border-radius: .5rem;
+    border-radius: 10px;
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+    filter: brightness(60%);
+}
+
+.contact-button:hover {
+    filter: brightness(100%);
+    background-color: var(--dark-color);
+    color: var(--white-color)
 }
 
 .contact {
@@ -768,7 +773,8 @@ footer {
     .footer-text {
         margin-left: 20px;
     }
-    .footer-data{
+
+    .footer-data {
         margin: 0px;
     }
 }

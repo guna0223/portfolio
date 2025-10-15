@@ -335,6 +335,7 @@ li {
     display: flex;
     margin-bottom: var(--mb-4);
 }
+
 .about-title {
     color: black;
     text-decoration: underline;
@@ -501,8 +502,8 @@ li {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-.skill:hover {
-    transform: translatey(-2px);
+.skill:hover { 
+    transform: translateY(-2px);
     transition: all 0.3s ease;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }

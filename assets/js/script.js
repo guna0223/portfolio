@@ -80,7 +80,6 @@ sr.reveal('.skill', { origin: "top", delay: 400 })
 
 /*SCROLL PORTFOLIO*/
 sr.reveal('.project-img', { interval: 200 })
-sr.reveal('.project-img-down', { origin: "down", interval: 200 })
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact-subtitle', {})

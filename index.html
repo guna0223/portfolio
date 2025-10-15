@@ -523,7 +523,7 @@
         }
 
         .skill:hover {
-            margin-top: -9px ; 
+            margin-top: -9px;
 
             transform: translateY(-20px);
             transition: all 0.3s ease;
@@ -604,15 +604,25 @@
             bottom: -100%;
             width: 300px;
             height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(255, 255, 255, .3);
             border-radius: .5rem;
             cursor: pointer;
             backdrop-filter: blur(10px);
             transition: .3s;
             z-index: 1;
+            background: linear-gradient(to top, rgba(255, 255, 255, .3) 40%, transparent 60%);
+        }
+
+        .project-link-title {
+            text-align: center;
+            font-size: var(--h1-font-size);
+            color: var(--white-color);
+            margin: 10px;
+        }
+
+        .project-link-about {
+            text-align: center;
+            display: block;
+            font-size: var(15px);
         }
 
         .project-img:hover .project-link {
@@ -620,9 +630,19 @@
         }
 
         .project-link-name {
+            display: flex;
+            justify-content: center;
             color: var(--dark-color);
+            i{
+                font-size: 20px;
+                margin-left: 10px;
+            }
         }
 
+        .project-link-name:hover {
+            color: var(--white-color);
+            transform: scale(1.05);
+        }
         @media screen and (max-width: 750px) {
             .project-container {
                 display: grid;
@@ -959,7 +979,10 @@
                         <img src="assets/images/work1.jpg" alt="1St project">
 
                         <div class="project-link ">
-                            <a href="" class="project-link-name">View Details</a>
+                            <h1 class="project-link-title">This is my page</h1>
+                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quasi, pariatur.</p>
+                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
 
@@ -967,7 +990,10 @@
                         <img src="assets/images/work1.jpg" alt="1St project">
 
                         <div class="project-link">
-                            <a href="" class="project-link-name">View Details</a>
+                            <h1 class="project-link-title">This is my page</h1>
+                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quasi, pariatur.</p>
+                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
 
@@ -975,7 +1001,10 @@
                         <img src="assets/images/work1.jpg" alt="1St project">
 
                         <div class="project-link">
-                            <a href="" class="project-link-name">View Details</a>
+                            <h1 class="project-link-title">This is my page</h1>
+                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quasi, pariatur.</p>
+                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
 
@@ -983,7 +1012,10 @@
                         <img src="assets/images/work1.jpg" alt="1St project">
 
                         <div class="project-link ">
-                            <a href="" class="project-link-name">View Details</a>
+                            <h1 class="project-link-title">This is my page</h1>
+                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quasi, pariatur.</p>
+                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
 
@@ -1074,7 +1106,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main js -->
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 </body>
 
 </html>

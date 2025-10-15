@@ -633,7 +633,8 @@
             display: flex;
             justify-content: center;
             color: var(--dark-color);
-            i{
+
+            i {
                 font-size: 20px;
                 margin-left: 10px;
             }
@@ -643,6 +644,7 @@
             color: var(--white-color);
             transform: scale(1.05);
         }
+
         @media screen and (max-width: 750px) {
             .project-container {
                 display: grid;
@@ -821,6 +823,13 @@
                 margin: 0px;
             }
         }
+        .home,
+        .about-title,
+        .Skills-section,
+        .project-section,
+        .contact-section {
+            scroll-margin-top: 80px;
+        }
     </style>
 
 </head>
@@ -858,7 +867,7 @@
             </div>
         </section>
         <!-- about -->
-        <h2 class="about-title">About</h2>
+        <h2 class="about-title" id="about">About</h2>
         <div class="about-part">
             <section class="about-section" id="about">
                 <div class="about-container bd-grid">

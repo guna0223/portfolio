@@ -59,6 +59,15 @@
     box-sizing: border-box;
 }
 
+/*  scrool-*/
+.about-title,
+.Skills-section,
+.project-section,
+.contact-section,
+.home-scroll {
+    scroll-margin-top: 80px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -502,7 +511,7 @@ li {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-.skill:hover { 
+.skill:hover {
     /* margin-left: -2px ; */
 
     transform: translateY(-2px);

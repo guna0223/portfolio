@@ -495,7 +495,7 @@ li {
 
 .section-title {
     text-align: center;
-    color: black;
+    color: var(--white-color);
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
@@ -552,7 +552,7 @@ li {
 }
 
 .skill {
-    background: var(--white-color);
+    background: var(--bg-primary);
     border-radius: 6px;
     width: 150px;
     height: 180px;
@@ -565,7 +565,7 @@ li {
 
 .skill:hover {
     margin-top: -2px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(24, 24, 24) 3px 3px 6px 0px inset, rgba(39, 39, 39, 0.5) -3px -3px 6px 1px inset;
 }
 
 
@@ -609,7 +609,7 @@ li {
 }
 
 .project-title {
-    color: black;
+    color:var(--white-color);
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
@@ -679,7 +679,7 @@ li {
 
 
 .contact-title {
-    color: black;
+    color: var(--white-color);
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
@@ -781,7 +781,12 @@ li {
 }
 
 footer {
-    background-color: var(--first-color);
+    margin-top: 10px;
+    background-color: var(--bg-primary);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-accent);
+    transition: var(--transition-smooth);
+
 }
 
 .footer-container {

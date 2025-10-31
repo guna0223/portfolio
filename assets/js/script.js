@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const socialIcons = document.querySelectorAll('.social-icon');
 
     // Professions for typewriter effect
+    
     const professions = [
         'Full-Stack Developer',
         'Frontend Developer',

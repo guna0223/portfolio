@@ -38,7 +38,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+a{
+    text-decoration: none;
+}
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -1175,6 +1177,7 @@ header.scrolled {
 }
 
 /* Projects Section */
+
 .projects {
     background: var(--bg-primary);
     position: relative;

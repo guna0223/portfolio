@@ -1,312 +1,468 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Own css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-    <!-- Google font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="/assets/css/style.css">_
 </head>
 
 <body>
-    <!-- Nav-Bar -->
-    <header class="header">
-        <nav class="nav bd-grid d-flex  justify-content-between ">
-            <h3 class="backtohome"><a href="#" class="text-decoration-none backtohome">Portfolio</a></h3>
-            <div class="list-menu" id="list_menu">
-                <ul class="list-items d-flex">
-                    <li class="list-item"><a href="#home" class="item-link active">Home</a></li>
-                    <li class="list-item"><a href="#about" class="item-link">About</a></li>
-                    <li class="list-item"><a href="#skills" class="item-link">Skills</a></li>
-                    <li class="list-item"><a href="#project" class="item-link">Project</a></li>
-                    <li class="list-item"><a href="#contact" class="item-link">Contact</a></li>
-                </ul>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Gunasekar<span class="brand-dot">.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#service" class="nav-link">Services</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="cta-btn">Let's Talk</a>
             </div>
-            <div class="nav-toggle" id="nav_toggle">
-                <i class="bi bi-list"></i>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
+
     <main>
-        <!-- home -->
-        <section class="home" id="home">
-            <div class="home-container">
-                <h1 class="home-title"><span>I am..</span></h1>
-                <h2 class="home-subtitle"><span>Gunasekar</span></h2> <a href="" download>
-                    <button type="submit" class="contact-button">Download CV</button></a>
+        <section id="home" class="section home">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <div class="greeting">👋 Hello there!</div>
+                        <h1 class="hero-title">I'm <span class="accent">Gunasekar</span></h1>
+                        <h2 class="hero-subtitle" id="rotating-profession">Web Developer</h2>
+                        <p class="hero-desc">
+                            <!-- kjchdkhcfjds -->
+                        </p>
 
-                <div class="home-scroll">
-                    <a href="#about" class="home-scroll-link"><i class="bi bi-arrow-up"></i>Scrool Down</a>
-                </div>
-                <img src="assets/images/dp-img/DSC_0385 (1).jpg" alt="this is img" class="home-img">
-            </div>
-        </section>
-        <!-- about -->
-        <h2 class="about-title" id="about">About</h2>
-        <div class="about-part">
-            <section class="about-section" id="about">
-                <div class="about-container bd-grid">
+                        <div class="hero-actions">
+                            <button class="hire-btn primary">
+                                <span>Hire Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="hire-btn secondary">
+                                <i class="fas fa-download"></i>
+                                <span>Download CV</span>
+                            </button>
+                        </div>
 
-                    <div class="about-img">
-                        <img src="assets/images/dp-img/dpimg.png" alt=" this is img" class="about-img">
+                        <div class="social-links">
+                            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="about-infos">
-                        <div class="about-info">
-                            <h2 class="about-subtitle">I' am Gunasekar</h2>
-                            <span class="about-profession">Web Developer</span>
-                            <p class="about-text"> I'm a passionate Web Developer who loves turning ideas <br> into
-                                interactive
-                                and
-                                user-friendly websites.
-                                I specialize in creating <br> clean, responsive designs using HTML, CSS, and JavaScript.
+                    <div class="home-image">
+                        <div class="image-container">
+                            <img src="images/img.jp" alt="Profile photo of Asep" class="profile-image">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-rocket"></i>
+                                <span>Fast Loading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="images/img.jp" alt="About Asep" class="about-img">
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="about-description">
+                            <p>
+                                <!-- csahjfhads -->
                             </p>
 
-                            <div class="about-social">
-                                <a href="https://www.linkedin.com/feed/" target="_blank" class="about-social-iocn"><i
-                                        class="bi bi-linkedin"></i></a>
-                                <a href="https://github.com/guna0223" target="_blank" class="about-social-iocn"><i
-                                        class="bi bi-github"></i></a>
-                                <!-- <a href="" class="about-social-iocn"></a> -->
+                            <p>
+
+                                <!-- sdashjdh -->
+                            </p>
+
+                            <p>
+                                <!-- ahfjksagfkjasgkfh -->
+                            </p>
+                        </div>
+
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Boudouaou,Boumerdès,Algerie</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Web Development</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <button class="about-btn">
+                                <span>Download CV</span>
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend Development</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skill-item">
+                                    <i class="fas fa-server"></i>
+                                    <span>dhsbsd</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 80%"></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Database Management</h3>
+                            <div class="skill-items">
+
+                                <!-- <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 75%"></div>
+                                    </div>
+                                </div> -->
+
+                                <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>PostgreSQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 70%"></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>DevOps & Tools</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>VS Code</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>UI/UX Design</h3>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-        <!-- for media screen  -->
-        <section class="media">
-            <div class="about-info">
-                <div class="about-info">
-                    <h2 class="about-subtitle">I' am Gunasekar</h2>
-                    <span class="about-profession">Web Developer</span>
-                    <p class="about-text"> I'm a passionate Web Developer who loves turning ideas <br> into
-                        interactive
-                        and
-                        user-friendly websites.
-                        I specialize in creating <br> clean, responsive designs using HTML, CSS, and JavaScript.
-                    </p>
+            </div>
+            </div>
+        </section>
 
-                    <div class="about-social">
-                        <a href="https://www.linkedin.com/feed/" class="about-social-iocn"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/guna0223" class="about-social-iocn"><i class="bi bi-github"></i></a>
-                        <!-- <a href="" class="about-social-iocn"></a> -->
+        <!-- Services Section -->
+        <section id="service" class="section services">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <div class="services-content">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>I create responsive, modern websites using the latest technologies and best practices.
+                                From concept to deployment, I ensure your website looks great and performs perfectly.
+                            </p>
+                            <div class="service-features">
+                                <span>Responsive Design</span>
+                                <span>Performance Optimized</span>
+                                <span>SEO Friendly</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- SKILLs -->
-        <section class="Skills-section" id="skills">
-            <h2 class="section-title">Skills</h2>
 
-            <div class="skills-container">
-                <div class="skills-box">
-                    <h3 class="skills-subtitle">Development</h3>
-                    <h4 class="skills-subtitle">Front-end</h4>
-                    <span class="skill-name">HTML5</span>
-                    <span class="skill-name">CSS3</span>
-                    <span class="skill-name">JavaScript</span>
-                    <span class="skill-name">Bootstrap</span>
-                    <span class="skill-name">React</span>
-
-                    <!-- <h4 class="skills-subtitle">Back-end</h4>
-                    <span class="skill-name">Python</span> -->
-                    <!-- <span class="skill-name"></span>
-                    <span class="skill-name">JavaScript</span>
-                    <span class="skill-name">Bootstrap</span>
-                    <span class="skill-name">React</span> -->
-                    <h3 class="skills-subtitle">Tools & Platforms</h3>
-                    <span class="skill-name">Git & GitHub</span>
-                    <span class="skill-name">VS Code</span>
+        <!-- Projects Section -->
+        <section id="project" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="" alt="Project 1">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-commerce Platform</h3>
+                                <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features
+                                    include user authentication, payment processing, and admin dashboard.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <!-- <span></span>
+                                    <span></span>
+                                    <span></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="" alt="Project 3">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Weather Dashboard</h3>
+                                <p>An interactive weather dashboard with location-based forecasts, weather maps, and
+                                    historical data visualization.</p>
+                                <div class="project-tech">
+                                    <span>JavaScript</span>
+                                    <span>OpenWeather API</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/p" alt="Project 4">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Portfolio Website</h3>
+                                <p>A modern, responsive portfolio website showcasing creative work with smooth
+                                    animations and interactive elements.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- skill card img -->
-        <section id="skills">
-            <div class="card-container">
-                <div class="skills-grid ">
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML" />
-                        <div class="skill-names">HTML</div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            alt="CSS" />
-                        <div class="skill-names">CSS</div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript" />
-                        <div class="skill-names">JAVASCRIPT</div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                            alt="ReactJS" />
-                        <div class="skill-names">REACT JS</div>
-                    </div>
-                    <div class="skill">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                            alt="GitHub" />
-                        <div class="skill-names">GITHUB</div>
-                    </div>
 
-        </section>
-        <!-- Project -->
-
-        <section class="project-section " id="project">
-            <h2 class="project-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-container grid ">
-                    <div class="project-img ">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link ">
-                            <h1 class="project-link-title">This is my page</h1>
-                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quasi, pariatur.</p>
-                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-img ">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link">
-                            <h1 class="project-link-title">This is my page</h1>
-                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quasi, pariatur.</p> 
-                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a> 
-                        </div>
-                    </div>
-
-                    <div class="project-img project-img-down">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link">
-                            <h1 class="project-link-title">This is my page</h1>
-                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quasi, pariatur.</p>
-                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-img project-img-down">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link ">
-                            <h1 class="project-link-title">This is my page</h1>
-                            <p class="project-link-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quasi, pariatur.</p>
-                            <a href="" class="project-link-name">View Details<i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- <div class="project-img">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link">
-                            <a href="" class="project-link-name">View Details</a>
-                        </div>
-                    </div>
-
-                    <div class="project-img ">
-                        <img src="assets/images/work1.jpg" alt="1St project">
-
-                        <div class="project-link">
-                            <a href="" class="project-link-name">View Details</a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!-- -====---Contact---====--->
-        <section class="contact-section " id="contact">
-            <h2 class="contact-title">Contact</h2>
-
-            <div class="contact-container bd-grid">
-                <div class="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
                     <div class="contact-info">
-                        <h3 class="contact-subtitle">EMAIL:</h3>
-                        <span class="contact-text">gunassekar0223@gmail.com</span>
-
-                        <h3 class="contact-subtitle">PHONE</h3>
-                        <span class="contact-text">+91 9486436037</span>
-
-                        <h3 class="contact-subtitle">ADDRESS</h3>
-                        <span class="contact-text">India</span>
-                    </div>
-                    <div>
-                        <form action="mailto:gunasekar0223@gmail.com" method="post" enctype="text/plain"
-                            class="contact-form">
-                            <div class="contact-inputs">
-                                <input type="text" placeholder="Name" class="contact-input" required>
-                                <input type="email" placeholder="Email" class="contact-input" required>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-
-                            <textarea name="" id="" cols="0" role="10" class="contact-input"></textarea>
-
-                            <button type="submit" class="contact-button">Send Message</button>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>gunasekar0223@gmail.com</p>
+                                <a href="mailto:asep@example.com">Send Email</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>9486436037</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p></p>
+                                <a href="#" target="_blank">View on Map</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>9486436037</p>
+                                <a href="https://web.whatsapp.com/" target="_blank">Send Message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Your Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-data">
-                <h2 class="footer-title">Gunasekar</h2>
-                <p class="footer-text">I'm Gunasekar and this is my personal website</p>
-            </div>
+    <script src="/assets/js/script.js"></script>
 
-            <div class="footer-data">
-                <h2 class="footer-title">EXPLORE</h2>
-                <ul>
-                    <li><a href="#home" class="footer-link">Home</a></li>
-                    <li><a href="#about" class="footer-link">About</a></li>
-                    <li><a href="#skills" class="footer-link">Skills</a></li>
-                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
-                    <li><a href="#Contact" class="footer-link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-data">
-                <h2 class="footer-title">FOLLOW</h2>
-                <div class="social-icon">
-                    <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="footer-social"><i class="bi bi-github"></i></a>
-                    <!-- <a href="#" class="footer-social"><i class='bx bxl-twitter'></i></a>-->
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <!-- scroll  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- main js -->
-
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

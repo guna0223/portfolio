@@ -1065,6 +1065,7 @@ header.scrolled {
     transition: width 1s ease;
 }
 
+
 /* Services Section */
 .services {
     background: var(--bg-secondary);

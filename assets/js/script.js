@@ -532,12 +532,3 @@ window.addEventListener('unhandledrejection', (event) => {
     console.error('Unhandled Promise Rejection:', event.reason);
 });
 
-// Service Worker Registration (optional)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        // Uncomment if you have a service worker
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then(registration => console.log('SW registered'))
-        //     .catch(error => console.log('SW registration failed'));
-    });
-}

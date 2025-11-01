@@ -38,9 +38,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -865,6 +867,10 @@ header.scrolled {
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+
+    .profile-image {
+        display: none;
     }
 
     .profile-image,

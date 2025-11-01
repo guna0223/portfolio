@@ -189,7 +189,10 @@ header.scrolled {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
 }
-
+main{
+    width: 100%;
+    margin: auto;
+}
 .hamburger {
     display: none;
     flex-direction: column;

@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'Frontend Developer',
         'Backend Developer',
         'Problem Solver',
-
     ];
 
     // Typewriter Effect
@@ -226,8 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 showNotification("Resume downloaded!", "success");
             }, 500);
         }
-
-
     }
 
     // Notification System

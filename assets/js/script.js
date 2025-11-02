@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (button.textContent.includes('Download CV')) {
             // Handle CV download
             const link = document.createElement('a');
-            link.href = '/assets/resume/myresume.pdf';
+            link.href = '/assets/resume/resume.pdf';
             link.download = 'Guna_Sekar_Resume.pdf';
             link.click();
 

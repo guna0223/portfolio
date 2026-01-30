@@ -1,4 +1,4 @@
-// Professional Portfolio JavaScript
+// Enhanced Professional Portfolio JavaScript
 document.addEventListener('DOMContentLoaded', function () {
     // DOM Elements
     const header = document.querySelector('header');
@@ -56,6 +56,13 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger?.classList.toggle('active');
         navMenu?.classList.toggle('active');
         document.body.style.overflow = navMenu?.classList.contains('active') ? 'hidden' : '';
+        
+        // Add/remove body class for mobile menu open state
+        if (navMenu?.classList.contains('active')) {
+            document.body.classList.add('menu-open');
+        } else {
+            document.body.classList.remove('menu-open');
+        }
     }
 
     // ============================================
@@ -123,6 +130,13 @@ document.addEventListener('DOMContentLoaded', function () {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animated');
+                    
+                    // Add stagger delay for child elements
+                    const siblings = entry.target.parentElement?.querySelectorAll('.animate-on-scroll');
+                    if (siblings && siblings.length > 1) {
+                        const index = Array.from(siblings).indexOf(entry.target);
+                        entry.target.style.transitionDelay = `${index * 0.1}s`;
+                    }
                 }
             });
         }, {
@@ -153,6 +167,80 @@ document.addEventListener('DOMContentLoaded', function () {
         }, { threshold: 0.5 });
 
         skillFills.forEach(fill => skillObserver.observe(fill));
+    }
+
+    // ============================================
+    // CARD HOVER EFFECTS
+    // ============================================
+    function initCardEffects() {
+        const cards = document.querySelectorAll('.project-card, .service-card, .skill-category');
+        
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // Touch support for mobile
+            card.addEventListener('touchstart', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('touchend', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    }
+
+    // ============================================
+    // BUTTON RIPPLE EFFECT
+    // ============================================
+    function initRippleEffect() {
+        const buttons = document.querySelectorAll('.hire-btn, .cta-btn, .about-btn, .contact-form button[type=\"submit\"]');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                    pointer-events: none;
+                `;
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     }
 
     // ============================================
@@ -205,6 +293,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     group.classList.remove('focused');
                 }
             });
+
+            // Real-time validation
+            input.addEventListener('input', () => {
+                if (input.checkValidity()) {
+                    group.style.borderColor = '#10b981';
+                } else {
+                    group.style.borderColor = '#ef4444';
+                }
+            });
         });
 
         // Form submission
@@ -220,9 +317,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
+            // Show success message with animation
+            const button = this.querySelector('button[type=\"submit\"]');
+            const originalText = button.textContent;
+            button.textContent = 'Message Sent! ✓';
+            button.style.background = '#10b981';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+            }, 3000);
+            
             this.reset();
+            
+            // Remove validation styles
+            formGroups.forEach(group => {
+                group.style.borderColor = '';
+            });
         });
     }
 
@@ -236,6 +347,42 @@ document.addEventListener('DOMContentLoaded', function () {
             header?.classList.remove('scrolled');
         }
         updateActiveNavFromScroll();
+    }
+
+    // ============================================
+    // PARALLAX EFFECT FOR HERO
+    // ============================================
+    function initParallax() {
+        const homeSection = document.querySelector('.home');
+        const homeImage = document.querySelector('.home-image');
+        
+        if (!homeSection || !homeImage) return;
+        
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if (scrolled < window.innerHeight) {
+                homeImage.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+        }, { passive: true });
+    }
+
+    // ============================================
+    // SOCIAL ICONS PULSE EFFECT
+    // ============================================
+    function initSocialPulse() {
+        const socialIcons = document.querySelectorAll('.social-icon');
+        
+        socialIcons.forEach((icon, index) => {
+            icon.style.animationDelay = `${index * 0.2}s`;
+            
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.1)';
+            });
+            
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
     }
 
     // ============================================
@@ -259,6 +406,145 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ============================================
+    // KEYBOARD NAVIGATION
+    // ============================================
+    function initKeyboardNav() {
+        navLinks.forEach(link => {
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    link.click();
+                }
+            });
+        });
+    }
+
+    // ============================================
+    // PROJECT CARD OVERLAY TOGGLE (Mobile)
+    // ============================================
+    function initProjectOverlay() {
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                // Only on mobile
+                if (window.innerWidth <= 768) {
+                    const overlay = this.querySelector('.project-overlay');
+                    if (overlay) {
+                        overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
+                    }
+                }
+            });
+        });
+    }
+
+    // ============================================
+    // SMOOTH SCROLL TO TOP BUTTON
+    // ============================================
+    function initScrollToTop() {
+        const scrollBtn = document.createElement('button');
+        scrollBtn.className = 'scroll-to-top';
+        scrollBtn.innerHTML = '<i class=\"fas fa-arrow-up\"></i>';
+        scrollBtn.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--highlight);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+        `;
+        
+        document.body.appendChild(scrollBtn);
+        
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        }, { passive: true });
+    }
+
+    // ============================================
+    // PRELOADER
+    // ============================================
+    function initPreloader() {
+        const preloader = document.createElement('div');
+        preloader.className = 'preloader';
+        preloader.innerHTML = `
+            <div class=\"preloader-content\">
+                <div class=\"preloader-spinner\"></div>
+                <div class=\"preloader-text\">Loading...</div>
+            </div>
+        `;
+        preloader.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a2e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        `;
+        
+        const spinner = preloader.querySelector('.preloader-spinner');
+        spinner.style.cssText = `
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid #e94560;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        `;
+        
+        const text = preloader.querySelector('.preloader-text');
+        text.style.cssText = `
+            color: white;
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        `;
+        
+        // Add spin animation
+        const style = document.createElement('style');
+        style.textContent = '@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+        
+        document.body.appendChild(preloader);
+        
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+                setTimeout(() => preloader.remove(), 500);
+            }, 500);
+        });
+    }
+
+    // ============================================
     // EVENT LISTENERS
     // ============================================
     hamburger?.addEventListener('click', toggleMobileMenu);
@@ -279,15 +565,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // INITIALIZE
     // ============================================
     function init() {
+        // Initialize preloader
+        initPreloader();
+        
         // Start typewriter effect
         if (heroSubtitle) {
             typeWriter();
         }
 
-        // Initialize animations
+        // Initialize animations and effects
         initScrollAnimations();
-        initSkillBars();
+        initCardEffects();
+        initRippleEffect();
         initContactForm();
+        initParallax();
+        initSocialPulse();
+        initKeyboardNav();
+        initProjectOverlay();
+        initScrollToTop();
 
         // Initial scroll check
         handleScroll();

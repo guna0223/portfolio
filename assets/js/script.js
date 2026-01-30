@@ -255,6 +255,9 @@ document.addEventListener('DOMContentLoaded', function () {
             link.href = '/assets/resume/resume.pdf';
             link.download = 'Gunasekar_Resume.pdf';
             link.click();
+            
+            // Show styled notification
+            showNotification('Resume downloaded successfully! ✓');
         }
         
         // Handle Hire Me button - scroll to contact
@@ -268,6 +271,102 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         }
+    }
+
+    // ============================================
+    // NOTIFICATION SYSTEM
+    // ============================================
+    function showNotification(message) {
+        // Remove existing notification
+        const existing = document.querySelector('.notification-toast');
+        if (existing) existing.remove();
+        
+        const notification = document.createElement('div');
+        notification.className = 'notification-toast';
+        notification.innerHTML = `
+            <div class="notification-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="notification-content">
+                <span class="notification-message">${message}</span>
+            </div>
+            <button class="notification-close"><i class="fas fa-times"></i></button>
+        `;
+        
+        // Add notification styles
+        notification.style.cssText = `
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: white;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            z-index: 10000;
+            transform: translateX(120%);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            max-width: 350px;
+        `;
+        
+        const icon = notification.querySelector('.notification-icon');
+        icon.style.cssText = `
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        `;
+        
+        const content = notification.querySelector('.notification-content');
+        content.style.cssText = `
+            flex: 1;
+        `;
+        
+        const messageEl = notification.querySelector('.notification-message');
+        messageEl.style.cssText = `
+            color: #1a1a2e;
+            font-weight: 500;
+            font-size: 0.95rem;
+        `;
+        
+        const closeBtn = notification.querySelector('.notification-close');
+        closeBtn.style.cssText = `
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 1rem;
+            transition: color 0.2s;
+        `;
+        
+        closeBtn.addEventListener('click', () => {
+            notification.style.transform = 'translateX(120%)';
+            setTimeout(() => notification.remove(), 400);
+        });
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+            if (notification.parentElement) {
+                notification.style.transform = 'translateX(120%)';
+                setTimeout(() => notification.remove(), 400);
+            }
+        }, 3000);
     }
 
     // ============================================

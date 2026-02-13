@@ -98,7 +98,7 @@ Hi, I'm **Gunasekar**! Passionate Full-Stack Developer skilled in Python, Django
 | 🌤️ **Weather App** | Real-time weather forecasting application | HTML, CSS, JavaScript |
 | 🎬 **Movie App** | Movie database with search functionality | HTML, CSS, JavaScript |
 | 💬 **WhatsApp Clone** | WhatsApp web interface clone | HTML, CSS, JavaScript |
-| 🎮 **Game App** | Interactive browser-based game | HTML, CSS, JavaScript |
+| 🎮 **Game App** | Interactive browser-based game | Django full-stack |
 
 ---
 

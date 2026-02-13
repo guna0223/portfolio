@@ -1055,6 +1055,10 @@ footer p {
         height: 300px;
     }
 
+    .about-img {
+        display: none !important;
+    }
+
     .hero-actions {
         flex-direction: column;
         gap: var(--spacing-md);
@@ -1109,6 +1113,10 @@ footer p {
 @media (max-width: 480px) {
     .section {
         padding: 70px 0 var(--spacing-lg);
+    }
+
+    .about-img {
+        display: none !important;
     }
 
     .hero-title {

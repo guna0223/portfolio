@@ -1,26 +1,130 @@
-# Portfolio Website
+# 👨‍💻 Gunasekar's Portfolio
 
-Welcome to my **Portfolio Website**! This is a fully responsive personal portfolio designed to showcase my skills, projects, and experience. Built with **HTML, CSS, and JavaScript**, it is optimized to work seamlessly on devices of all screen sizes.
+A modern, responsive personal portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer.
 
----
-
-## 🌟 Features
-
-- **Responsive Design** – Works perfectly on mobile, tablet, and desktop screens.  
-- **Modern UI/UX** – Clean, minimalistic, and user-friendly design.  
-- **Project Showcase** – Highlight your projects with images, descriptions, and links.  
-- **Interactive Elements** – Buttons, navigation menus, and other interactive components using JavaScript.  
-- **Easy Navigation** – Smooth scrolling and section-based layout.  
+![Portfolio Preview](./assets/images/project-img/portfolio.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 📋 Table of Contents
 
-- **HTML5** – For the structure and content of the website.  
-- **CSS3** – For styling, layout, and responsiveness.  
-- **JavaScript (ES6)** – For interactivity and dynamic content.  
-- **Media Queries** – To make the website responsive on all devices.  
+- [👨‍💻 Gunasekar's Portfolio](#-gunasekars-portfolio)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [👤 About](#-about)
+  - [✨ Features](#-features)
+  - [🛠️ Tech Stack](#️-tech-stack)
+  - [📑 Sections](#-sections)
+  - [🚀 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [📂 Projects](#-projects)
+  - [📞 Contact](#-contact)
+  - [📄 License](#-license)
 
 ---
 
+## 👤 About
 
+Hi, I'm **Gunasekar**! Passionate Full-Stack Developer skilled in Python, Django, SQL, and modern frontend technologies including HTML, CSS, JavaScript, and React. I focus on building clean, responsive, and scalable web applications.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 📱 **Fully Responsive** | Optimized for mobile, tablet, and desktop devices |
+| 🎨 **Modern UI/UX** | Clean, minimalistic design with smooth animations |
+| 🚀 **Interactive Elements** | Dynamic content and engaging user interactions |
+| 📊 **Smooth Scrolling** | Seamless navigation between sections |
+| ⚡ **Fast Performance** | Lightweight and optimized for speed |
+| 🔗 **Social Integration** | Connect via WhatsApp, LinkedIn, and GitHub |
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=amazon-dynamodb&logoColor=white)
+
+</div>
+
+---
+
+## 📑 Sections
+
+1. **🏠 Home** – Hero section with introduction and call-to-action buttons
+2. **👨‍💼 About** – Personal background and professional journey
+3. **🛠️ Skills** – Technical skills and expertise
+4. **🎯 Services** – Services offered
+5. **📂 Projects** – Showcase of completed work
+6. **📞 Contact** – Get in touch
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- Text editor (VS Code recommended)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/guna0223/portfolio.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd portfolio
+   ```
+
+3. **Open in browser**
+   - Open `index.html` directly in your browser, or
+   - Use a live server extension in VS Code
+
+---
+
+## 📂 Projects
+
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| 🌤️ **Weather App** | Real-time weather forecasting application | HTML, CSS, JavaScript |
+| 🎬 **Movie App** | Movie database with search functionality | HTML, CSS, JavaScript |
+| 💬 **WhatsApp Clone** | WhatsApp web interface clone | HTML, CSS, JavaScript |
+| 🎮 **Game App** | Interactive browser-based game | HTML, CSS, JavaScript |
+
+---
+
+## 📞 Contact
+
+<div align="center">
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://web.whatsapp.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gunasekar0223/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guna0223)
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+Made with ❤️ by **Gunasekar**
+
+</div>

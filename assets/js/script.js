@@ -1,5 +1,5 @@
 // ============================================
-// Portfolio - Dark Sci-Fi Theme JavaScript
+// Portfolio - Dr. Strange Mystic Theme JavaScript
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // TYPEWRITER EFFECT
     // ============================================
     const professions = [
+        'Full-Stack Developer',
         'Web Developer',
-        'Frontend Developer',
         'React Developer',
-        'Full-Stack Developer'
+        'Python Developer'
     ];
 
     let professionIndex = 0;
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const animationObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
+                    entry.target.classList.add('visible');
                 }
             });
         }, {
@@ -452,43 +452,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ============================================
-    // CURSOR GLOW EFFECT (Optional Desktop)
-    // ============================================
-    function initCursorGlow() {
-        // Only on desktop
-        if (!window.matchMedia('(min-width: 1025px)').matches) return;
-        
-        const cursorGlow = document.createElement('div');
-        cursorGlow.className = 'cursor-glow';
-        document.body.appendChild(cursorGlow);
-        
-        let ticking = false;
-        
-        document.addEventListener('mousemove', function(e) {
-            if (!ticking) {
-                requestAnimationFrame(function() {
-                    cursorGlow.style.left = e.clientX + 'px';
-                    cursorGlow.style.top = e.clientY + 'px';
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-        
-        // Activate glow on hover over interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, .project-card, .service-card');
-        
-        interactiveElements.forEach(function(el) {
-            el.addEventListener('mouseenter', function() {
-                cursorGlow.classList.add('active');
-            });
-            
-            el.addEventListener('mouseleave', function() {
-                cursorGlow.classList.remove('active');
-            });
-        });
-    }
 
     // ============================================
     // SECTION REVEAL ANIMATIONS
@@ -599,5 +562,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavHighlight();
     handleScroll(); // Initial call
 
-    console.log('Portfolio - Dark Sci-Fi Theme Initialized');
+    console.log('✨ Portfolio - Dr. Strange Mystic Theme Initialized ✨');
 });

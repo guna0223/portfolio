@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Gunasekar | Full-Stack Developer Portfolio</title>
 
     <link rel="shortcut icon" href="/assets/images/icon/img.png" type="image/x-icon">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap">
+    <!-- Google Fonts - Cinzel for headings, Raleway for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -17,22 +19,34 @@
 </head>
 
 <body>
+    <!-- Mystical Background Elements -->
+    <div class="mystical-particles"></div>
+    <div class="portal-glow"></div>
+    <div class="sacred-tome-overlay"></div>
+
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <a href="#">
-                <div class="nav-brand">Portfolio<span class="brand-dot">..</span></div>
+                <div class="nav-brand">
+                    <span class="brand-symbol">⦿</span>
+                    <span class="brand-text">Portfolio</span>
+                </div>
             </a>
 
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#service" class="nav-link">Services</a></li>
-                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#project" class="nav-link">Project</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="#contact" class="cta-btn">Let's Talk</a>
+                <a href="#contact" class="cta-btn">
+                    <span class="btn-symbol">✦</span>
+                    <span>Let's Talk</span>
+                </a>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -43,23 +57,32 @@
     </header>
 
     <main>
+        <!-- Home Section -->
         <section id="home" class="section home">
             <div class="container">
                 <div class="home-content">
                     <div class="home-text">
-                        <div class="greeting animate-on-scroll">Hello there!</div>
-                        <h1 class="hero-title animate-on-scroll">I'm <span class="accent">Gunasekar</span></h1>
-                        <h2 class="hero-subtitle animate-on-scroll" id="rotating-profession">Web Developer</h2>
+                        <div class="mystical-intro animate-on-scroll">
+                            <span class="intro-rune">◈</span>
+                            <span class="greeting">Hello, I am</span>
+                            <span class="intro-rune">◈</span>
+                        </div>
+                        <h1 class="hero-title animate-on-scroll">
+                            <span class="accent-name">Gunasekar</span>
+                        </h1>
+                        <h2 class="hero-subtitle animate-on-scroll" id="rotating-profession">
+                            <span class="subtitle-prefix">Full-Stack</span> Developer
+                        </h2>
                         <p class="hero-desc animate-on-scroll">
-                            Passionate Full-Stack Developer skilled in Python, Django, SQL, and modern frontend tools
-                            including HTML, CSS, JavaScript, and React, focused on building clean, responsive, and
+                            A passionate Full-Stack Developer skilled in Python, Django, SQL, and modern frontend technologies 
+                            including HTML, CSS, JavaScript, and React, focused on building clean, responsive, and 
                             scalable web applications.
                         </p>
 
                         <div class="hero-actions animate-on-scroll">
                             <button class="hire-btn primary">
+                                <span class="btn-icon">⚡</span>
                                 <span>Hire Me</span>
-                                <i class="fas fa-arrow-right"></i>
                             </button>
                             <button class="hire-btn secondary">
                                 <i class="fas fa-download"></i>
@@ -68,84 +91,110 @@
                         </div>
 
                         <div class="social-links animate-on-scroll">
-
-                            <a href="https://web.whatsapp.com/" aria-label="WhatsApp" class="whatsapp-icon social-icon">
-                                <i class="fab fa-whatsapp "></i>
+                            <a href="https://web.whatsapp.com/" aria-label="WhatsApp" class="social-icon mystic-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span class="social-glow"></span>
                             </a>
-                            <a href="https://www.linkedin.com/in/gunasekar0223/" aria-label="LinkedIn"
-                                class="linkedin social-icon linkedin-icon">
-                                <i class="fab fa-linkedin-in "></i>
+                            <a href="https://www.linkedin.com/in/gunasekar0223/" aria-label="LinkedIn" class="social-icon mystic-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="social-glow"></span>
                             </a>
-                            <a href="https://github.com/guna0223" aria-label="GitHub" class="github-icon social-icon">
-                                <i class="fab fa-github "></i>
+                            <a href="https://github.com/guna0223" aria-label="GitHub" class="social-icon mystic-github">
+                                <i class="fab fa-github"></i>
+                                <span class="social-glow"></span>
                             </a>
-
                         </div>
                     </div>
 
                     <div class="home-image animate-on-scroll">
-                        <div class="image-container">
-                            <img src="/assets/images/dp-img/imgae.jpg" alt="Gunasekar" class="profile-image">
+                        <div class="portal-frame">
+                            <div class="portal-ring outer-ring"></div>
+                            <div class="portal-ring middle-ring"></div>
+                            <div class="portal-ring inner-ring"></div>
+                            <div class="portal-core">
+                                <img src="/assets/images/dp-img/imgae.jpg" alt="Gunasekar" class="profile-image">
+                            </div>
+                            <div class="portal-particles"></div>
+                        </div>
+                        <div class="floating-runes">
+                            <span class="rune">⧉</span>
+                            <span class="rune">⍟</span>
+                            <span class="rune">✺</span>
+                            <span class="rune">⊛</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section about">
             <div class="container">
                 <div class="about-content">
                     <div class="about-image">
-                        <div class="image-wrapper">
-                            <img src="assets/images/dp-img/imgae.jpg" alt="About Asep" class="about-img">
+                        <div class="grimoire-frame">
+                            <div class="book-spine"></div>
+                            <div class="book-cover">
+                                <img src="assets/images/dp-img/imgae.jpg" alt="About Gunasekar" class="about-img">
+                            </div>
+                            <div class="magical-seal"></div>
                         </div>
                     </div>
 
                     <div class="about-text">
-                        <h2 class="section-title">About Me</h2>
+                        <h2 class="section-title">
+                            <span class="title-icon">📜</span>
+                            About Me
+                        </h2>
                         <div class="about-description">
-                            <p>
-                                I am a Web Developer passionate about building responsive, user-friendly, and visually
-                                appealing websites.
+                            <p class="intro-paragraph">
+                                <span class="drop-cap">W</span>elcome, seeker of arcane knowledge. I am a Web Developer 
+                                who has transcended the ordinary and embraced the mystic arts of code.
                             </p>
-
                             <p>
-                                Motivated Web Developer with a strong interest in full-stack development and clean UI
-                                design. I am currently building real-world projects to strengthen my skills in Python,
-                                Django, SQL, HTML, CSS, JavaScript, and React. I aim to grow in a collaborative
-                                environment and contribute to practical, user-focused web solutions.
+                                A passionate Sorcerer of Full-Stack Development, I currently master the ancient arts of 
+                                Python, Django, SQL, and modern frontend grimoires including HTML, CSS, JavaScript, and React. 
+                                My quest leads me through the multidimensional realms of clean, responsive, and scalable web applications.
                             </p>
-
                         </div>
 
                         <div class="about-highlights">
                             <div class="highlight">
-                                <i class="fas fa-graduation-cap"></i>
+                                <div class="highlight-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
                                 <div>
                                     <h4>Education</h4>
                                     <p>Computer Science</p>
                                 </div>
+                                <div class="highlight-glow"></div>
                             </div>
                             <div class="highlight">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="highlight-icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
                                 <div>
                                     <h4>Location</h4>
-                                    <p>BTM 1 <sup>st</sup>stage,Bangaluru</p>
-
+                                    <p>BTM 1<sup>st</sup> Stage, Bangaluru</p>
                                 </div>
+                                <div class="highlight-glow"></div>
                             </div>
                             <div class="highlight">
-                                <i class="fas fa-briefcase"></i>
-                                <div>
-                                    <h4>Web Development</h4>
+                                <div class="highlight-icon">
+                                    <i class="fas fa-code"></i>
                                 </div>
+                                <div>
+                                    <h4>Specialization</h4>
+                                    <p>Web Development</p>
+                                </div>
+                                <div class="highlight-glow"></div>
                             </div>
                         </div>
 
                         <div class="about-actions">
                             <button class="about-btn">
-                                <span>Download CV</span>
                                 <i class="fas fa-download"></i>
+                                <span>Download CV</span>
                             </button>
                         </div>
                     </div>
@@ -154,107 +203,151 @@
         </section>
 
         <!-- Skills Section -->
-
         <section id="skills" class="section skills">
             <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
+                <h2 class="section-title">
+                    <span class="title-icon">🔮</span>
+                    Arcane Skills
+                </h2>
                 <div class="skills-content">
                     <div class="skills-grid">
                         <div class="skill-category animate-on-scroll">
-                            <h3>Frontend Development</h3>
+                            <div class="category-header">
+                                <i class="fas fa-eye"></i>
+                                <h3>Frontend Mysticism</h3>
+                            </div>
                             <div class="skill-items">
                                 <div class="skill-item">
                                     <i class="fab fa-html5 html"></i>
                                     <span>HTML5</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
                                 </div>
                                 <div class="skill-item">
                                     <i class="fab fa-css3-alt css"></i>
                                     <span>CSS3</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
                                 </div>
                                 <div class="skill-item">
                                     <i class="fab fa-js-square javascript"></i>
                                     <span>JavaScript</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-category animate-on-scroll">
-                            <h3>Backend Development</h3>
+                            <div class="category-header">
+                                <i class="fas fa-hat-wizard"></i>
+                                <h3>Backend Enchantments</h3>
+                            </div>
                             <div class="skill-items">
                                 <div class="skill-item">
                                     <i class="fab fa-python python"></i>
                                     <span>Python</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-category animate-on-scroll">
-                            <h3>Database Management</h3>
+                            <div class="category-header">
+                                <i class="fas fa-database"></i>
+                                <h3>Data Vaults</h3>
+                            </div>
                             <div class="skill-items">
                                 <div class="skill-item">
-                                    <i class="fas fa-database mysql"></i>
+                                    <i class="fas fa-server mysql"></i>
                                     <span>MySQL</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-category animate-on-scroll">
-                            <h3>DevOps & Tools</h3>
+                            <div class="category-header">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                                <h3>Tools & Tech</h3>
+                            </div>
                             <div class="skill-items">
                                 <div class="skill-item">
                                     <i class="fab fa-git-alt git"></i>
                                     <span>Git</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
                                 </div>
                                 <div class="skill-item">
                                     <i class="fab fa-github github"></i>
-                                    <span>Git</span>
+                                    <span>GitHub</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
                                 </div>
                                 <div class="skill-item">
                                     <i class="fas fa-code vscode"></i>
                                     <span>VS Code</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-category animate-on-scroll">
-                            <h3>UI/UX Design</h3>
-                            <div class="skill-item">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Responsive Design</span>
+                            <div class="category-header">
+                                <i class="fas fa-palette"></i>
+                                <h3>UI/UX Thaumaturgy</h3>
                             </div>
-                        </div>
-                        <div class="skill-category animate-on-scroll">
-                            <h3>Framework & Library</h3>
                             <div class="skill-items">
                                 <div class="skill-item">
-                                    <i class="fa-brands fa-bootstrap bootstrap"></i>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Responsive Design</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 95%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category animate-on-scroll">
+                            <div class="category-header">
+                                <i class="fas fa-book-spells"></i>
+                                <h3>Frameworks & Libraries</h3>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-bootstrap bootstrap"></i>
                                     <span>Bootstrap</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div>
                                 </div>
                                 <div class="skill-item">
-                                    <i class="fa-brands fa-react react"></i>
+                                    <i class="fab fa-react react"></i>
                                     <span>React</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-python django"></i>
+                                    <span>Django</span>
+                                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
         <!-- Services Section -->
         <section id="service" class="section services">
             <div class="container">
-                <h2 class="section-title">What I Do</h2>
+                <h2 class="section-title">
+                    <span class="title-icon">⚔️</span>
+                    What I Do
+                </h2>
                 <div class="services-content">
                     <div class="services-grid">
                         <div class="service-card animate-on-scroll">
                             <div class="service-icon">
-                                <i class="fas fa-code"></i>
+                                <div class="icon-circle">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="icon-glow"></div>
                             </div>
                             <h3>Web Development</h3>
-                            <p>I create responsive, modern websites using the latest technologies and best practices.
-                                From concept to deployment, I ensure your website looks great and performs perfectly.
-                            </p>
+                            <p>I create responsive, modern websites using the latest technologies and best practices. From concept to deployment, I ensure your website looks great and performs perfectly.</p>
                             <div class="service-features">
+                                <span class="feature-rune">✦</span>
                                 <span>Responsive Design</span>
+                                <span class="feature-rune">✦</span>
                                 <span>Performance Optimized</span>
+                                <span class="feature-rune">✦</span>
                                 <span>SEO Friendly</span>
                             </div>
                         </div>
@@ -266,17 +359,22 @@
         <!-- Projects Section -->
         <section id="project" class="section projects">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">
+                    <span class="title-icon">🗝️</span>
+                    My Projects
+                </h2>
                 <div class="projects-content">
                     <div class="projects-grid">
-                        <!-- what's app -->
+                        <!-- WhatsApp Project -->
                         <div class="project-card animate-on-scroll">
                             <div class="project-image">
-                                <img src="/assets/images/project-img/what's_app.png" alt="WhatsApp UI Project">
+                                <div class="relic-frame">
+                                    <img src="/assets/images/project-img/what's_app.png" alt="WhatsApp UI Project">
+                                </div>
                                 <div class="project-overlay">
                                     <div class="project-links">
                                         <a href="https://whatsapp-ui-ten.vercel.app/" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
+                                            <i class="fas fa-portal-enter"></i>
                                         </a>
                                         <a href="https://github.com/guna0223/whatsapp-ui" class="project-link">
                                             <i class="fab fa-github"></i>
@@ -288,26 +386,32 @@
                             <div class="project-info">
                                 <h3>WhatsApp UI Clone</h3>
                                 <p>
-                                    Built a responsive WhatsApp UI clone using React, featuring chat lists,
+                                    Built a responsive WhatsApp UI clone using React, featuring chat lists, 
                                     message layout, and dynamic data rendering using JSON.
                                 </p>
                                 <div class="project-tech">
+                                    <span class="tech-rune">⦿</span>
                                     <span>React</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>JavaScript</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>JSON</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>CSS</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- weather -->
+                        <!-- Weather Relic -->
                         <div class="project-card animate-on-scroll">
                             <div class="project-image">
-                                <img src="/assets/images/project-img/weather.png" alt="Weather Dashboard">
+                                <div class="relic-frame">
+                                    <img src="/assets/images/project-img/weather.png" alt="Weather Dashboard">
+                                </div>
                                 <div class="project-overlay">
                                     <div class="project-links">
                                         <a href="https://weather-dashbord-seven.vercel.app/" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
+                                            <i class="fas fa-portal-enter"></i>
                                         </a>
                                         <a href="https://github.com/guna0223/weather-dashbord" class="project-link">
                                             <i class="fab fa-github"></i>
@@ -317,23 +421,27 @@
                             </div>
                             <div class="project-info">
                                 <h3>Weather Dashboard</h3>
-                                <p>An interactive weather dashboard with location-based forecasts, weather maps, and
+                                <p>An interactive weather dashboard with location-based forecasts, weather maps, and 
                                     historical data visualization.</p>
                                 <div class="project-tech">
+                                    <span class="tech-rune">⦿</span>
                                     <span>JavaScript</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>OpenWeather API</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- portfolio -->
+
+                        <!-- Portfolio Relic -->
                         <div class="project-card animate-on-scroll">
                             <div class="project-image">
-                                <img src="/assets/images/project-img/portfolio.png" alt="Portfolio Website">
+                                <div class="relic-frame">
+                                    <img src="/assets/images/project-img/portfolio.png" alt="Portfolio Website">
+                                </div>
                                 <div class="project-overlay">
                                     <div class="project-links">
-                                        <a href="https://portfolio-rho-ivory-hvtoexlqp1.vercel.app/"
-                                            class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
+                                        <a href="https://portfolio-rho-ivory-hvtoexlqp1.vercel.app/" class="project-link">
+                                            <i class="fas fa-portal-enter"></i>
                                         </a>
                                         <a href="https://github.com/guna0223/portfolio" class="project-link">
                                             <i class="fab fa-github"></i>
@@ -343,23 +451,29 @@
                             </div>
                             <div class="project-info">
                                 <h3>Portfolio Website</h3>
-                                <p>A modern, responsive portfolio website showcasing creative work with smooth
+                                <p>A modern, responsive portfolio website showcasing creative work with smooth 
                                     animations and interactive elements.</p>
                                 <div class="project-tech">
+                                    <span class="tech-rune">⦿</span>
                                     <span>HTML5</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>CSS3</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>JavaScript</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- movie -->
+
+                        <!-- Movie Relic -->
                         <div class="project-card animate-on-scroll">
                             <div class="project-image">
-                                <img src="/assets/images/project-img/movie.png" alt="Movie Hub">
+                                <div class="relic-frame">
+                                    <img src="/assets/images/project-img/movie.png" alt="Movie Hub">
+                                </div>
                                 <div class="project-overlay">
                                     <div class="project-links">
                                         <a href="https://movie-project-omega-tawny.vercel.app/" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
+                                            <i class="fas fa-portal-enter"></i>
                                         </a>
                                         <a href="https://github.com/guna0223/movie-project" class="project-link">
                                             <i class="fab fa-github"></i>
@@ -369,28 +483,32 @@
                             </div>
 
                             <div class="project-info">
-                                <h3>Movie Hub</h3>
-                                <p>A powerful movie browsing app built with React and TMDB API, featuring real-time
-                                    movie search, detailed movie info, and a user-friendly favourites system with smooth
-                                    UI and responsive design.</p>
+                                <h3>Movie App</h3>
+                                <p>A powerful movie browsing app built with React and TMDB API, featuring real-time 
+                                    movie search, detailed movie info, and a user-friendly favorites system with smooth 
+                                    UI and responsive design.</p> 
+                                    cinematic search, detailed prophetic movie information, and a mystical favorites system.</p>
                                 <div class="project-tech">
+                                    <span class="tech-rune">⦿</span>
                                     <span>React</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>Context API</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>TMDB API</span>
-                                    <span>CSS / Responsive UI</span>
+                                    <span class="tech-rune">⦿</span>
+                                    <span>CSS</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- game selling -->
 
+                        <!-- Game Relic -->
                         <div class="project-card animate-on-scroll">
                             <div class="project-image">
-                                <img src="/assets/images/project-img/game.png" alt="Movie Hub">
+                                <div class="relic-frame">
+                                    <img src="/assets/images/project-img/game.png" alt="Game Selling">
+                                </div>
                                 <div class="project-overlay">
                                     <div class="project-links">
-                                        <!-- <a href="https://movie-project-omega-tawny.vercel.app/" class="project-link">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a> -->
                                         <a href="https://github.com/guna0223/Django-Game" class="project-link">
                                             <i class="fab fa-github"></i>
                                         </a>
@@ -399,42 +517,52 @@
                             </div>
 
                             <div class="project-info">
-                                <h3>Game Selling Web Application</h3>
-                                <p>A full-stack game selling web application developed using Django, featuring user
-                                    authentication, game catalog browsing, order management, and an admin panel for
-                                    managing games and users.</p>
+                                <h3>Game Selling App</h3>
+                                <p>A full-stack game selling web application developed using Django, featuring user 
+                                    authentication, game catalog browsing, order management, and an admin panel for 
+                                    managing games and users.</p> 
+                                    forbidden artifact browsing, order enchantments, and an admin scroll for managing the realm.</p>
                                 <div class="project-tech">
+                                    <span class="tech-rune">⦿</span>
                                     <span>Django</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>Python</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>HTML</span>
+                                    <span class="tech-rune">⦿</span>
                                     <span>CSS</span>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">
+                    <span class="title-icon">🔱</span>
+                    Get In Touch
+                </h2>
                 <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item animate-on-scroll">
                             <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <div class="contact-glow"></div>
                             </div>
                             <div class="contact-details">
                                 <h3>Email</h3>
                                 <p>gunasekar0223@gmail.com</p>
-                                <a href="mailto:asep@example.com">Send Email</a>
+                                <a href="mailto:gunasekar0223@gmail.com">Send Email</a>
                             </div>
                         </div>
                         <div class="contact-item animate-on-scroll">
                             <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-runic-compass"></i>
+                                <div class="contact-glow"></div>
                             </div>
                             <div class="contact-details">
                                 <h3>Phone</h3>
@@ -443,18 +571,20 @@
                         </div>
                         <div class="contact-item animate-on-scroll">
                             <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-location-dot"></i>
+                                <div class="contact-glow"></div>
                             </div>
                             <div class="contact-details">
-                                <h3>Location</h3>
-                                <p>BTM 1 <sup>st</sup>stage,Bangaluru</p>
-                                <a href="https://www.google.com/maps/place/12%C2%B055'11.7%22N+77%C2%B036'33.9%22E/@12.9199239,77.6068483,17z/data=!3m1!4b1!4m4!3m3!8m2!3d12.9199239!4d77.6094232?entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank">View on Map</a>
+                                <h3>Current Realm</h3>
+                                <p>BTM 1<sup>st</sup> Stage, Bangaluru</p>
+                                <a href="https://www.google.com/maps/place/BTM+1st+Stage,+Bangalore/@12.9199239,77.6068483,17z"
+                                    target="_blank">View Coordinates</a>
                             </div>
                         </div>
                         <div class="contact-item animate-on-scroll">
                             <div class="contact-icon">
                                 <i class="fab fa-whatsapp"></i>
+                                <div class="contact-glow"></div>
                             </div>
                             <div class="contact-details">
                                 <h3>WhatsApp</h3>
@@ -468,21 +598,27 @@
                             <div class="form-group">
                                 <input type="text" id="name" name="name" required>
                                 <label for="name">Your Name</label>
+                                <div class="form-line"></div>
                             </div>
                             <div class="form-group">
                                 <input type="email" id="email" name="email" required>
                                 <label for="email">Your Email</label>
+                                <div class="form-line"></div>
                             </div>
                             <div class="form-group">
                                 <input type="text" id="subject" name="subject" required>
-                                <label for="subject">Your Subject</label>
+                                <label for="subject">Subject</label>
+                                <div class="form-line"></div>
                             </div>
                             <div class="form-group">
                                 <textarea id="message" name="message" rows="5" required></textarea>
-                                <label for="message">Your Message</label>
+                                <label for="message">Message</label>
+                                <div class="form-line"></div>
                             </div>
                             <button type="submit" class="submit-btn">
+                                <span class="btn-rune">◈</span>
                                 <span>Send Message</span>
+                                <span class="btn-rune">◈</span>
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
@@ -492,8 +628,22 @@
         </section>
     </main>
 
-    <script src="/assets/js/script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-symbol">⦿</div>
+            <p>Cast in Mystic Fire © 2026</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <span class="separator">✦</span>
+                <a href="#about">About</a>
+                <span class="separator">✦</span>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
